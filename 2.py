@@ -3,13 +3,13 @@ import streamlit as st
 import random
 
 items = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0]
-answer=random.sample(list1, 4)
+answer=random.shuffle(items)
 answer=''
 a_count=0 # initial A count
 b_count=0 # initial B count
 
 for i in range(4):
-    answer+=str(list1, 4)
+    answer+=str(item[i])
 while(True):
     number=st.text_input('請輸入數字： ')
     st.write(answer)
